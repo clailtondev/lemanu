@@ -12,36 +12,36 @@ const App = () => {
       id: 'valor',
       title: '1. Criação de Valor para o Cliente',
       icon: DollarSign,
-      description: 'Definir o que o cliente realmente considera importante e pelo qual está disposto a pagar. Na logística do Mercado Livre, o valor está em entregas rápidas, confiáveis, frete acessível, rastreamento fácil e produtos em perfeito estado.',
-      mercadolivreExample: 'Foco na experiência de compra: o Mercado Livre otimiza cada etapa para garantir que o pacote chegue ao cliente de forma eficiente e segura, agregando valor percebido, como a velocidade de entrega (Mercado Envios Full) e flexibilidade de recebimento (Mercado Pontos).'
+      description: 'Definir o que o cliente realmente valoriza. Na logística do Mercado Livre, valor é entrega rápida, confiável, frete acessível e produtos em perfeito estado.',
+      mercadolivreExample: 'Otimização de cada etapa para garantir que o pacote chegue ao cliente de forma eficiente e segura, agregando valor percebido (ex: Mercado Envios Full, Mercado Pontos).'
     },
     {
       id: 'mapear-fluxo',
       title: '2. Mapeamento do Fluxo de Valor',
       icon: Target,
-      description: 'Identificar e visualizar todas as etapas que transformam um produto desde a origem até a entrega ao cliente, para encontrar desperdícios.',
-      mercadolivreExample: 'Mapeamento do ciclo do pedido: desde a compra no site, passando pelo recebimento nos CDs, armazenamento, picking, packing, expedição, transporte primário, hubs regionais e a entrega final. Cada ponto é analisado para otimização e redução de lead time.'
+      description: 'Identificar e visualizar todas as etapas do produto, da origem à entrega, para encontrar desperdícios.',
+      mercadolivreExample: 'Mapeamento do ciclo do pedido: compra online, recebimento em CDs, armazenamento, picking, packing, expedição, transporte e entrega final. Cada ponto é analisado para otimização.'
     },
     {
       id: 'fluxo-continuo',
       title: '3. Criação de Fluxo Contínuo',
       icon: Rocket,
-      description: 'Garantir que as etapas que agregam valor ocorram de forma sequential, sem interrupções, gargalos ou atrasos.',
-      mercadolivreExample: 'Automação nos CDs (robôs, esteiras), layout otimizado, operação 24/7, cross-docking e sincronização de modais (aéreo, rodoviário) para garantir que o pacote flua suavemente e sem paradas.'
+      description: 'Garantir que as etapas de valor ocorram sequencialmente, sem interrupções ou gargalos.',
+      mercadolivreExample: 'Automação em CDs (robôs, esteiras), layout otimizado, operação 24/7, cross-docking e sincronização de modais (aéreo, rodoviário) para um fluxo suave.'
     },
     {
       id: 'producao-sob-demanda',
       title: '4. Estabelecimento de Produção Sob Demanda (Puxado)',
       icon: Zap,
-      description: 'Produzir ou mover itens apenas quando há uma demanda real do cliente, evitando superprodução e excesso de estoque.',
-      mercadolivreExample: 'Mercado Envios Full opera com estoque mínimo e reposição baseada em vendas reais (Just-in-Time). Algoritmos preditivos de demanda por região garantem o posicionamento estratégico de produtos, evitando estoque desnecessário.'
+      description: 'Mover itens apenas com demanda real, evitando superprodução e excesso de estoque.',
+      mercadolivreExample: 'Mercado Envios Full opera com estoque mínimo e reposição baseada em vendas reais (Just-in-Time). Algoritmos preditivos posicionam produtos estrategicamente.'
     },
     {
       id: 'melhoria-continua',
       title: '5. Melhoria Contínua (Kaizen)',
       icon: RefreshCcw,
-      description: 'A busca incessante pela perfeição, eliminando cada vez mais desperdícios e buscando a excelência em todos os processos.',
-      mercadolivreExample: 'Investimento contínuo em tecnologia (IA, machine learning para otimização algorítmica), feedback dos clientes (NPS), inovação (drones, veículos elétricos) e programas de sugestões de colaboradores para aprimoramento constante.'
+      description: 'Busca incessante pela perfeição, eliminando desperdícios e buscando excelência.',
+      mercadolivreExample: 'Investimento contínuo em tecnologia (IA, machine learning), feedback de clientes (NPS), inovação (drones, veículos elétricos) e programas de sugestões de colaboradores.'
     },
   ];
 
@@ -56,56 +56,56 @@ const App = () => {
           title: 'Transporte Desnecessário',
           icon: Truck,
           description: 'Movimento desnecessário de materiais ou produtos.',
-          mercadolivreCombat: 'Expansão de CDs próximos aos consumidores, otimização de rotas com algoritmos de IA (redução de 30% no tempo médio de entrega e 25% no consumo de combustível) e uso de frota própria (incluindo aviões) para reduzir distâncias e tempos de trânsito.'
+          mercadolivreCombat: 'Expansão de CDs próximos, otimização de rotas com IA (30% menos tempo, 25% menos combustível) e frota própria.'
         },
         {
           id: 'inventario',
           title: 'Excesso de Inventário',
           icon: Box,
-          description: 'Excesso de estoque de produtos ou materiais que não estão sendo processados ou não têm demanda imediata.',
-          mercadolivreCombat: 'Mercado Envios Full centraliza o estoque dos vendedores nos CDs, permitindo uma gestão eficiente baseada na demanda real. Algoritmos preditivos e reposição automática reduzem em 35% produtos parados.'
+          description: 'Excesso de estoque sem demanda imediata.',
+          mercadolivreCombat: 'Mercado Envios Full centraliza estoque, com gestão eficiente baseada na demanda. Algoritmos preditivos reduzem em 35% produtos parados.'
         },
         {
           id: 'movimentacao',
           icon: Users,
           title: 'Movimentação Desnecessária',
-          description: 'Movimentos desnecessários de pessoas (funcionários) dentro do processo.',
-          mercadolivreCombat: 'Layout otimizado dos CDs para minimizar deslocamento dos operadores, automação com robôs e esteiras, e postos de trabalho ergonômicos.'
+          description: 'Movimentos desnecessários de funcionários.',
+          mercadolivreCombat: 'Layout otimizado em CDs, automação (robôs, esteiras) e postos de trabalho ergonômicos minimizam deslocamento.'
         },
         {
           id: 'espera',
           icon: Clock,
           title: 'Espera',
-          description: 'Tempo de inatividade de pessoas, produtos ou equipamentos, esperando pela próxima etapa do processo.',
-          mercadolivreCombat: 'Padronização e sincronização de processos (recebimento, separação, embalagem, expedição), tecnologia de rastreamento em tempo real e serviços como Mercado Envios Flex para entregas rápidas, minimizando inatividade.'
+          description: 'Tempo de inatividade de pessoas, produtos ou equipamentos.',
+          mercadolivreCombat: 'Processos padronizados e sincronizados, rastreamento em tempo real e Mercado Envios Flex para entregas rápidas.'
         },
         {
           id: 'superproducao',
           icon: Factory,
           title: 'Superprodução',
-          description: 'Produzir mais do que o necessário, antes que haja demanda.',
-          mercadolivreCombat: 'Operações ativadas pela demanda real dos pedidos (sistema puxado), evitando o processamento de itens que não serão enviados imediatamente e gestão precisa do estoque distribuído conforme sazonalidade.'
+          description: 'Produzir mais do que o necessário, sem demanda.',
+          mercadolivreCombat: 'Operações ativadas pela demanda real (sistema puxado), evitando processamento de itens sem pedido e estoque desnecessário.'
         },
         {
           id: 'superprocessamento',
           icon: Repeat,
           title: 'Superprocessamento',
-          description: 'Realizar mais trabalho ou etapas do que o necessário para agregar valor ao produto ou serviço.',
-          mercadolivreCombat: 'Embalagem eficiente e padronizada (otimizada por algoritmos), automação na geração de etiquetas e notas fiscais, e integração de sistemas para evitar redigitação de informações e etapas redundantes.'
+          description: 'Realizar mais trabalho ou etapas do que o necessário.',
+          mercadolivreCombat: 'Embalagem eficiente e padronizada, automação de etiquetas e notas fiscais, e integração de sistemas para evitar redundâncias.'
         },
         {
           id: 'defeitos',
           icon: XCircle,
           title: 'Defeitos',
-          description: 'Erros, falhas ou produtos danificados que exigem retrabalho, descarte ou geram insatisfação do cliente.',
-          mercadolivreCombat: 'Tecnologia de rastreamento (código de barras, RFID), sistemas WMS integrados, automação nos CDs (redução de 40% nos erros de separação), controle de qualidade e treinamento de equipes.'
+          description: 'Erros, falhas ou produtos danificados que exigem retrabalho.',
+          mercadolivreCombat: 'Controle de qualidade, tecnologia de rastreamento (código de barras, RFID) e automação em CDs (40% menos erros de separação).'
         },
         {
           id: 'talento-nao-utilizado',
           icon: Lightbulb,
           title: 'Talento Não Utilizado',
-          description: 'Não aproveitar o potencial total, a criatividade e o conhecimento dos funcionários.',
-          mercadolivreCombat: 'Cultura de melhoria contínua (Kaizen), incentivo à proposição de soluções pelos funcionários, programas de sugestões, treinamento e desenvolvimento, e empoderamento das equipes para inovar.'
+          description: 'Não aproveitar o potencial, criatividade e conhecimento dos funcionários.',
+          mercadolivreCombat: 'Cultura de melhoria contínua (Kaizen), incentivo a soluções, programas de sugestões, treinamento e desenvolvimento.'
         },
       ]
     }
@@ -135,36 +135,36 @@ const App = () => {
       {
         name: '1. Pedido do Cliente',
         icon: Package,
-        description: 'O cliente realiza a compra online. O sistema processa o pedido em tempo real, verifica o estoque e aloca o produto mais próximo do cliente. Este é o início do sistema "Puxado".',
-        lean: 'Sistema Puxado, Criação de Valor para o Cliente, Mapeamento do Fluxo de Valor',
+        description: 'O cliente compra online. O sistema processa o pedido em tempo real, verifica o estoque e aloca o produto mais próximo. Início do sistema "Puxado".',
+        lean: 'Criação de Valor para o Cliente, Mapeamento do Fluxo de Valor, Estabelecimento de Produção Sob Demanda',
         coords: { x: 10, y: 50 }, // Percentage coordinates for visual layout
       },
       {
         name: '2. Fulfillment Center (CD)',
         icon: Box,
-        description: 'No Centro de Distribuição, ocorre a separação automatizada (picking) e a embalagem otimizada por algoritmos. A etiquetagem e o roteamento são automáticos, minimizando erros e movimentação.',
-        lean: 'Criação de Fluxo Contínuo, Redução de Erros e Desperdícios (Movimentação, Defeitos, Superprocessamento)',
+        description: 'No CD, ocorre separação automatizada (picking) e embalagem otimizada. Etiquetagem e roteamento automáticos minimizam erros e movimentação.',
+        lean: 'Criação de Fluxo Contínuo, Redução de Erros e Desperdícios',
         coords: { x: 30, y: 50 },
       },
       {
         name: '3. Transporte Primário',
         icon: Truck,
-        description: 'Os pacotes são consolidados por região e otimizados para rotas intercidades. O monitoramento GPS em tempo real garante a previsibilidade e combate o desperdício de transporte.',
-        lean: 'Criação de Fluxo Contínuo, Redução de Erros e Desperdícios (Transporte, Espera)',
+        description: 'Pacotes consolidados por região e rotas otimizadas. Monitoramento GPS em tempo real garante previsibilidade e combate desperdício de transporte.',
+        lean: 'Criação de Fluxo Contínuo, Redução de Erros e Desperdícios',
         coords: { x: 50, y: 50 },
       },
       {
         name: '4. Hubs Regionais',
         icon: MapPin,
-        description: 'Nos hubs, os pacotes são redistribuídos por área de entrega para a otimização da "última milha". Há integração com parceiros locais e o cross-docking é utilizado para reduzir o tempo de armazenagem.',
-        lean: 'Criação de Fluxo Contínuo, Redução de Erros e Desperdícios (Espera, Inventário)',
+        description: 'Nos hubs, pacotes redistribuídos para otimização da "última milha". Integração com parceiros locais e cross-docking reduzem tempo de armazenagem.',
+        lean: 'Criação de Fluxo Contínuo, Redução de Erros e Desperdícios',
         coords: { x: 70, y: 50 },
       },
       {
         name: '5. Entrega Final',
         icon: CheckCircle,
-        description: 'A roteirização dinâmica e tentativas de entrega otimizadas garantem que o produto chegue ao cliente. Alternativas de recebimento (Mercado Pontos, lockers) aumentam a flexibilidade e o valor percebido.',
-        lean: 'Criação de Valor para o Cliente, Melhoria Contínua (Kaizen), Redução de Erros e Desperdícios (Defeitos, Espera)',
+        description: 'Roteirização dinâmica e tentativas de entrega otimizadas. Alternativas de recebimento (Mercado Pontos, lockers) aumentam flexibilidade e valor percebido.',
+        lean: 'Criação de Valor para o Cliente, Melhoria Contínua, Redução de Erros e Desperdícios',
         coords: { x: 90, y: 50 },
       },
     ];
@@ -540,10 +540,10 @@ const App = () => {
                   <Package className="w-7 h-7 mr-2" /> O que é Lean Manufacturing?
                 </h3>
                 <p className="mb-4">
-                  É uma filosofia de gestão focada em **maximizar o valor para o cliente** enquanto simultaneamente **elimina todos os desperdícios** (atividades que não agregam valor) em um processo. Originado no Sistema Toyota de Produção, o Lean busca otimizar processos através da melhoria contínua.
+                  É uma filosofia de gestão focada em maximizar o valor para o cliente e eliminar desperdícios. Originado no Sistema Toyota de Produção, o Lean otimiza processos pela melhoria contínua.
                 </p>
                 <p>
-                  Os principais objetivos são: **redução de custos**, **melhoria da qualidade**, **diminuição do tempo de entrega** e **aumento da satisfação do cliente**.
+                  Objetivos principais: redução de custos, melhoria da qualidade, diminuição do tempo de entrega e aumento da satisfação do cliente.
                 </p>
               </div>
               <div>
@@ -551,7 +551,10 @@ const App = () => {
                   <Truck className="w-7 h-7 mr-2" /> A Logística do Mercado Livre
                 </h3>
                 <p className="mb-4">
-                  O Mercado Livre é o maior marketplace da América Latina, com operações em 18 países. Sua logística processa milhões de pedidos mensalmente, sendo um exemplo perfeito de aplicação dos princípios Lean em grande escala. A empresa investe pesado em tecnologia e infraestrutura para garantir que milhões de pacotes cheguem aos seus destinos de forma rápida e confiável, refletindo uma forte aplicação dos princípios Lean.
+                  O Mercado Livre é o maior marketplace da América Latina. Sua logística processa milhões de pedidos mensalmente, sendo um exemplo perfeito de aplicação dos princípios Lean em grande escala.
+                </p>
+                <p>
+                  A empresa investe pesado em tecnologia e infraestrutura para entregas rápidas e confiáveis, refletindo uma forte aplicação dos princípios Lean.
                 </p>
               </div>
             </div>
