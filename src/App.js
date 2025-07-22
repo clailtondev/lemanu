@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Package, Truck, Box, Zap, Repeat, Lightbulb, CheckCircle, XCircle, Users, ArrowRight, Factory, DollarSign, Clock, Target, Rocket, RefreshCcw, TrendingUp, BarChart, MapPin, Route, Calendar, Percent } from 'lucide-react';
+import { Package, Truck, Box, Zap, Repeat, Lightbulb, CheckCircle, XCircle, Users, ArrowRight, Factory, DollarSign, Clock, Target, Rocket, RefreshCcw, TrendingUp, BarChart, MapPin, Route, Calendar, Percent, Smile } from 'lucide-react'; // Added Smile icon for thanks
 
 // Main application component
 const App = () => {
@@ -526,6 +526,16 @@ const App = () => {
               Métricas e Resultados
             </button>
           </li>
+          <li className="mx-2 my-1">
+            <button
+              onClick={() => setActiveSection('thanks')}
+              className={`py-3 px-6 rounded-full font-semibold transition-colors duration-300 ${
+                activeSection === 'thanks' ? 'bg-blue-600 text-white shadow-lg' : 'text-gray-700 hover:bg-blue-100'
+              }`}
+            >
+              Agradecimentos
+            </button>
+          </li>
         </ul>
       </nav>
 
@@ -542,9 +552,6 @@ const App = () => {
                 <p className="mb-4">
                   É uma filosofia de gestão focada em maximizar o valor para o cliente e eliminar desperdícios. Originado no Sistema Toyota de Produção, o Lean otimiza processos pela melhoria contínua.
                 </p>
-                <p>
-                  Objetivos principais: redução de custos, melhoria da qualidade, diminuição do tempo de entrega e aumento da satisfação do cliente.
-                </p>
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-blue-700 mb-3 flex items-center">
@@ -553,11 +560,22 @@ const App = () => {
                 <p className="mb-4">
                   O Mercado Livre é o maior marketplace da América Latina. Sua logística processa milhões de pedidos mensalmente, sendo um exemplo perfeito de aplicação dos princípios Lean em grande escala.
                 </p>
-                <p>
-                  A empresa investe pesado em tecnologia e infraestrutura para entregas rápidas e confiáveis, refletindo uma forte aplicação dos princípios Lean.
-                </p>
               </div>
             </div>
+
+            {/* Integrantes do Grupo Section */}
+            <div className="mt-12 text-center">
+              <h3 className="text-2xl font-semibold text-blue-700 mb-4 flex items-center justify-center">
+                <Users className="w-7 h-7 mr-2" /> Integrantes do Grupo
+              </h3>
+              <ul className="list-none p-0 m-0 text-gray-700 text-lg flex flex-wrap justify-center gap-x-8 gap-y-2">
+                <li className="font-medium">Clailtim</li>
+                <li className="font-medium">David</li>
+                <li className="font-medium">Gustavo</li>
+                <li className="font-medium">Valdecio</li>
+              </ul>
+            </div>
+
             <div className="mt-8 text-center">
               <button
                 onClick={() => setActiveSection('principles')}
@@ -606,6 +624,32 @@ const App = () => {
         {activeSection === 'flow' && <InteractiveFlow />}
 
         {activeSection === 'metrics' && <MetricsDashboard />}
+
+        {activeSection === 'thanks' && (
+          <section className="bg-white p-8 rounded-xl shadow-lg mb-8 text-center">
+            <h2 className="text-4xl font-bold text-blue-800 mb-6 flex items-center justify-center">
+              <Smile className="w-10 h-10 mr-3" /> Agradecemos a Sua Atenção!
+            </h2>
+            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+              Esperamos que esta apresentação tenha proporcionado insights valiosos sobre a aplicação do Lean Manufacturing na logística do Mercado Livre.
+            </p>
+            <div className="relative inline-block group cursor-pointer">
+              {/* GIF do cachorro "Bom Dia". URL direto obtido do Tenor. */}
+              <img
+                src="https://media.tenor.com/nUolmeC7l14AAAAj/dog-meme.gif" // NOVO URL DO GIF!
+                alt="Meme de Agradecimento: Cachorro Bom Dia"
+                className="rounded-lg shadow-md transition-transform transform group-hover:scale-105 duration-300 w-full max-w-md mx-auto"
+                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/400x300/cccccc/000?text=Meme+Indisponível"; }}
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                Obrigado por nos acompanhar! 😉
+              </div>
+            </div>
+            <p className="text-lg text-gray-600 mt-8">
+              Qualquer dúvida, estamos à disposição!
+            </p>
+          </section>
+        )}
       </main>
 
       {/* Footer */}
