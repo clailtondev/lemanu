@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lemanu/static/css/main.fc0c21a5.css",
+    "main.js": "/lemanu/static/js/main.431c6228.js",
+    "static/js/453.6df0fdf8.chunk.js": "/lemanu/static/js/453.6df0fdf8.chunk.js",
+    "index.html": "/lemanu/index.html",
+    "main.fc0c21a5.css.map": "/lemanu/static/css/main.fc0c21a5.css.map",
+    "main.431c6228.js.map": "/lemanu/static/js/main.431c6228.js.map",
+    "453.6df0fdf8.chunk.js.map": "/lemanu/static/js/453.6df0fdf8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc0c21a5.css",
+    "static/js/main.431c6228.js"
+  ]
+}
